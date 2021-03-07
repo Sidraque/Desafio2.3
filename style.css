@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #312452;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 30px;
+}
+
+header div {
+    text-align: center;
+    
+    
+}
+
+header div a {
+    color: white;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+header div a:hover {
+    color: rgb(119, 81, 161);
+    transition: 0.8s;
+}
+
+/* Contents */
+
+.contents {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.content {
+    background-color: #7159c1;
+}
+
+.imageContent img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title,
+.contentInfo{
+    padding: 24px;
+}
+
+.contentInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lectureTime {
+    background-color: #7159c1;
+    filter: brightness(90%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
