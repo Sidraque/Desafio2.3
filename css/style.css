@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +16,6 @@ header {
 
 header div {
     text-align: center;
-    
-    
 }
 
 header div a {
@@ -33,6 +30,7 @@ header div a:hover {
     color: rgb(119, 81, 161);
     transition: 0.8s;
 }
+
 
 /* Contents */
 
@@ -59,7 +57,7 @@ header div a:hover {
 }
 
 .title,
-.contentInfo{
+.contentInfo {
     padding: 24px;
 }
 
@@ -76,3 +74,37 @@ header div a:hover {
     text-align: center;
 }
 
+
+/* ===== MODAL ====== */
+
+.modal {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: 25px;
+    top: 5px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 2px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+    text-decoration: none;
+}
